@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // ML API endpoint (replace with your backend URL)
-const ML_API_URL = process.env.REACT_APP_ML_API_URL || 'http://localhost:5000/api/predict';
+const ML_API_URL = import.meta.env.VITE_ML_API_URL || 'http://localhost:5000/api/predict';
 
 /**
  * Send a message to the ML backend and get a response
